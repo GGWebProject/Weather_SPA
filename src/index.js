@@ -1,3 +1,5 @@
-import './style.scss';
+import App from './componets/root';
 
-console.log('Hello World from your main file!');
+const AppInstance = new App();
+
+AppInstance.render();
