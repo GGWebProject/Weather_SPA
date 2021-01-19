@@ -1,22 +1,19 @@
 import Component from '../../AbstractClasses/Component';
 
 export default class Languages extends Component {
-// eslint-disable-next-line
-  constructor(parentNode) {
-    super(parentNode);
-  }
-
-  // eslint-disable-next-line
   render() {
     const controller = document.createElement('form');
+
+    controller.addEventListener('change', this.props.handleChangeTemperature);
+
     controller.innerHTML = `
       <label>
         <span>F</span>
-        <input type="radio" checked name="Farengeite">
+        <input type="radio" checked name="Temperature" value="Fahrenheit">
       </label>
       <label>
         <span>C</span>
-        <input type="radio" name="Celsium">
+        <input type="radio" name="Temperature" value="Celsius">
       </label>
     `;
 

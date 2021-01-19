@@ -11,6 +11,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    quotes: ["warn", 'single'],
+    quotes: ['warn', 'single'],
+    'no-underscore-dangle': ['error', { allowAfterThis: true }],
+    'class-methods-use-this': ['off'],
+    'import/prefer-default-export': ['off'],
   },
 };
