@@ -1,5 +1,7 @@
-import App from './componets/root';
+import App from './components/root';
+import appendService from './services/appendService';
 
 const AppInstance = new App();
+appendService.append(document.querySelector('.root'), AppInstance);
 
-AppInstance.render();
+console.log(AppInstance);
