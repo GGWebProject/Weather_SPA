@@ -22,7 +22,6 @@ export default class extends Component {
 
   handleChangeTemperature(e) {
     this.setState({ temperatureValue: e.target.value });
-    console.log(this);
   }
 
   render() {

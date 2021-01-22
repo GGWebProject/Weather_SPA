@@ -9,11 +9,11 @@ export default class Temperature extends Component {
     controller.innerHTML = `
       <label>
         <span>F</span>
-        <input type="radio" checked=${this.props.temperatureValue === 'Fahrenheit'} name="Temperature" value="Fahrenheit">
+        <input type="radio" ${this.props.temperatureValue === 'Fahrenheit' ? 'checked' : ''} name="Temperature" value="Fahrenheit">
       </label>
       <label>
         <span>C</span>
-        <input type="radio" checked=${this.props.temperatureValue === 'Celsius'} name="Temperature" value="Celsius">
+        <input type="radio" ${this.props.temperatureValue === 'Celsius' ? 'checked' : ''} name="Temperature" value="Celsius">
       </label>
     `;
 
